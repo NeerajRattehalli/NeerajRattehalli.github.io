@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,700');
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.projects__header {
+  width: 100vw;
+  height: 95vh;
+  overflow: hidden;
+  position: relative;
+  background: #484664;
+  
+  display: flex;
+
+  &--title{
+    position: absolute;
+    color: white;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 0.4rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    left: 20vw;
+    top: 30vh;
+    z-index: 10;
+    font-weight: 500;
+  }
+}
+
+.blob3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #B65D2A;
+  width: 50vmax;
+
+  
+  
+  &--1{
+    animation: move-1 10s ease-in-out infinite;
+  }
+
+  &--2{
+    animation: move-2 10s ease-in-out infinite;
+  }
+
+  &--3{
+    animation: move-3 10s ease-in-out infinite;
+  }
+}
+
+@keyframes move-1 {
+  0%   { transform: scale(2)   translate(10px, 150px); }
+  38%  { transform: scale(1.6, 2) translate(40vw, 20vh) rotate(160deg); }
+  40%  { transform: scale(1.6, 2) translate(40vw, 20vh) rotate(160deg); }
+  78%  { transform: scale(2.6) translate(0vw, 40vh) rotate(-20deg); }
+  80%  { transform: scale(2.6) translate(0vw, 40vh) rotate(-20deg); }
+  100% { transform: scale(2)   translate(10px, 150px); }
+}
+
+@keyframes move-2 {
+  0%   { transform: scale(1)   translate(60vw, 200px); }
+  38%  { transform: scale(0.8, 1) translate(0vw, 30vh) rotate(160deg); }
+  40%  { transform: scale(0.8, 1) translate(0vw, 30vh) rotate(160deg); }
+  78%  { transform: scale(1.1) translate(60vw, 50vh) rotate(-20deg); }
+  80%  { transform: scale(1.1) translate(60vw, 50vh) rotate(-20deg); }
+  100% { transform: scale(1)   translate(60vw, 200px); }
+}
+
+@keyframes move-3 {
+  0%   { transform: scale(1)   translate(60vw, 80vh); }
+  38%  { transform: scale(0.8, 1) translate(20vw, 80vh) rotate(160deg); }
+  40%  { transform: scale(0.8, 1) translate(20vw, 80vh) rotate(160deg); }
+  78%  { transform: scale(1.1) translate(60vw, 30vh) rotate(-20deg); }
+  80%  { transform: scale(1.1) translate(60vw, 30vh) rotate(-20deg); }
+  100% { transform: scale(1)   translate(60vw, 80vh); }
+}

@@ -1,0 +1,101 @@
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        stroke-width: 0.3rem;
+    }
+
+    100%{
+        stroke-width: 0rem;
+    }
+}
+
+
+@keyframes subtleFadeInOut{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0.25;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 900;
+        stroke-width: 0.3rem;
+    }
+
+    30%{
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 900;
+        stroke-width: 0.3rem;
+
+    }
+
+    100%{
+        fill:none;
+        stroke-dashoffset: 0;
+        stroke-width: 0.3rem;
+
+    }
+}
+
+@keyframes maintain{
+    0%, 100%{
+        fill:none;
+        stroke-dashoffset: 0;
+        stroke-width: 0.3rem;
+    }
+}
+
+@keyframes lineBack{
+
+
+    0%{
+        fill:none;
+        stroke-dashoffset: 0;
+        stroke-width: 0.3rem;
+
+    }
+
+    70%{
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 900;
+        stroke-width: 0.3rem;
+
+    }
+
+    100%{
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 900;
+        stroke-width: 0.3rem;
+    }
+
+}
+
+
+
+// @keyframes fillIn{
+//     to{
+//         fill: #fff;
+//     }
+// }

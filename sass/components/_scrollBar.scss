@@ -1,0 +1,50 @@
+.scroll{
+  height: 1.5rem;
+  overflow: hidden;
+
+  &__items{
+    height: 6rem;
+    animation: change 10s 0.5s infinite;
+  }
+
+  &__item{
+    display: block;
+    height: 1.5rem;
+  }
+}
+
+
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,-0%,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@-o-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,-0%,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+@-moz-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,-0%,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,-0%,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}

@@ -1,0 +1,44 @@
+.json{
+    line-height: 1.2;
+
+    &__item{
+        margin: 0;
+        padding: 0;
+        font-size: 1.7rem;
+        font-weight: 500;
+        display: inline;
+        
+        &::before{
+            content: "";
+        }
+    }
+
+    &__inner{
+        margin-left: 2rem;
+    }
+
+    &__p1{
+        color: #b2e64c;
+    }
+
+    &__p2{
+        margin-right: 0.5rem;
+    }
+
+    &__p2, &__p4{
+        color: #ff5794;
+    }
+
+    &__p3{
+        color: #e6db7a;
+
+    }
+
+    &__p5{
+        color: #66cce1;
+    }
+
+    &__brackets{
+        font-weight: 800;
+    }
+}

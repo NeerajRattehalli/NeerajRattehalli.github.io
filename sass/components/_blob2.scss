@@ -1,0 +1,48 @@
+// THANKS ANA TUDOR, YOU ARE A LEGEND
+$n: 30;
+$pini: 50%;
+$pfin: $pini;
+$bdim: 26rem;
+$size: $bdim $bdim;
+$blur: 5px;
+$gimg: ();
+
+@function rand($max: 13, $min: 3, $unit: 1rem) {
+	@return ($min + random($max - $min))*$unit
+}
+
+@for $i from 0 to $n{
+    $gimg: $gimg, var(--gimg);
+
+    @if $i > 0{
+        $pr: rand();
+        $px: rand(7*$pr);
+        $py: rand(7*$pr);
+        $pfin: $pfin, calc(50% + #{$px} - #{3.5*$pr}) calc(50% + #{$py} - #{3.5*$pr});
+        $size: $size, $pr $pr;
+    }
+}
+
+
+.blobs{
+    --gimg: radial-gradient(#000 67%, transparent 68%);
+    background: linear-gradient(deeppink, yellow);
+    height: 100vh;
+    width: 100vw;
+
+    &:after{
+        height: 100%;
+        display: block;
+        box-shadow: 0 0 0 2*$blur #fff;
+        background: $gimg #fff;
+        background-size: $size;
+        background-position: $pfin;
+        background-repeat:no-repeat;
+        filter: blur($blur) contrast(9);
+        mix-blend-mode: lighten;
+        animation: ani 1s cubic-bezier(.5,-1,0,1) infinite alternate;
+        content: '';
+    }
+}
+
+@keyframes ani { 0% { background-position: $pini } }
